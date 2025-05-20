@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3ED2BF162DDC8A9500653EBD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3ED2BF152DDC8A9500653EBD /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3ED2BF052DDC85F100653EBD /* TCAutoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCAutoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED2BF152DDC8A9500653EBD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,6 +34,16 @@
 			path = TCAutoTest;
 			sourceTree = "<group>";
 		};
+		3ED2BF102DDC8A6500653EBD /* Sources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3ED2BF122DDC8A7200653EBD /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +60,9 @@
 		3ED2BEFB2DDC85F000653EBD = {
 			isa = PBXGroup;
 			children = (
+				3ED2BF152DDC8A9500653EBD /* README.md */,
+				3ED2BF122DDC8A7200653EBD /* Resources */,
+				3ED2BF102DDC8A6500653EBD /* Sources */,
 				3ED2BF072DDC85F100653EBD /* TCAutoTest */,
 				3ED2BF062DDC85F100653EBD /* Products */,
 			);
@@ -86,6 +104,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				3ED2BF072DDC85F100653EBD /* TCAutoTest */,
+				3ED2BF102DDC8A6500653EBD /* Sources */,
+				3ED2BF122DDC8A7200653EBD /* Resources */,
 			);
 			name = TCAutoTest;
 			packageProductDependencies = (
@@ -105,6 +125,7 @@
 				TargetAttributes = {
 					3ED2BF042DDC85F100653EBD = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -132,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ED2BF162DDC8A9500653EBD /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +174,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -176,6 +199,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -185,6 +209,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
